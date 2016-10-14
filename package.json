@@ -1,0 +1,41 @@
+{
+  "name": "kuasa-core",
+  "version": "0.0.0",
+  "description": "OAuth 2.0 modular implementation",
+  "license": "MIT",
+  "author": "Simon Degraeve <simon.degraeve@gmail.com>",
+  "repository": "github:SimonDegraeve/kuasa-core",
+  "homepage": "https://github.com/SimonDegraeve/kuasa-core#readme",
+  "bugs": "https://github.com/SimonDegraeve/kuasa-core/issues",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "scripts": {
+    "lint": "kode lint",
+    "test": "kode test",
+    "build": "kode build",
+    "report-coverage": "kode report-coverage",
+    "release": "kode release"
+  },
+  "dependencies": {
+    "make-error": "^1.2.1",
+    "statuses": "^1.3.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.33.0",
+    "kode": "^2.4.5"
+  },
+  "babel": {
+    "presets": [
+      "saya"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "saya/flow"
+  },
+  "jest": {
+    "preset": "jest-preset-saya"
+  }
+}
