@@ -1,6 +1,7 @@
 /**
  * @flow
  */
+import typeIs from 'type-is';
 import { toLowerCaseKeys } from './utils';
 import type { Headers, Payload, Query } from './types';
 
@@ -30,5 +31,9 @@ export default class Request {
     this.headers = toLowerCaseKeys(options.headers);
     this.payload = options.payload || {};
     this.query = options.query || {};
+  }
+
+  is(types: string | Array<string>): boolean {
+    return !!typeIs(this, types);
   }
 }

@@ -28,4 +28,18 @@ describe('Request', () => {
       query: {},
     });
   });
+
+  it('does not infer the content-type when body is empty', () => {
+    const request = new Request({
+      headers: { 'content-type': 'application/json' },
+    });
+    expect(request.is('json')).toBe(false);
+  });
+
+  it('infers the content-type', () => {
+    const request = new Request({
+      headers: { 'content-type': 'application/json', 'content-length': 0 },
+    });
+    expect(request.is('json')).toBe(true);
+  });
 });

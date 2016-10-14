@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "make-error": "^1.2.1",
-    "statuses": "^1.3.0"
+    "statuses": "^1.3.0",
+    "type-is": "^1.6.13"
   },
   "devDependencies": {
     "flow-bin": "^0.33.0",
