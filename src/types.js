@@ -1,10 +1,6 @@
 /**
  * @flow
  */
-type ObjectWithStringsAsKeys = {
-  [key: string]: string,
-};
-
-export type Headers = ObjectWithStringsAsKeys;
-export type Payload = ObjectWithStringsAsKeys;
-export type Query = ObjectWithStringsAsKeys;
+export type Headers = { [key: string]: string | number };
+export type Payload = { [key: string]: string | number };
+export type Query = { [key: string]: string | number };
