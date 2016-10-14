@@ -1,6 +1,7 @@
 {
   "name": "kuasa-core",
   "version": "0.0.0",
+  "private": true,
   "description": "OAuth 2.0 modular implementation",
   "license": "MIT",
   "author": "Simon Degraeve <simon.degraeve@gmail.com>",
