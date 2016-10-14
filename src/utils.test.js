@@ -1,16 +1,16 @@
 /**
  *
  */
-import { keysToLowerCase } from './utils';
+import { toLowerCaseKeys } from './utils';
 
 
 /**
  *
  */
 describe('Utils', () => {
-  describe('keysToLowerCase()', () => {
+  describe('toLowerCaseKeys()', () => {
     it('transforms the keys of an object to lowercase', () => {
-      expect(keysToLowerCase({ A: 1 })).toEqual({ a: 1 });
+      expect(toLowerCaseKeys({ A: 1 })).toEqual({ a: 1 });
     });
   });
 });

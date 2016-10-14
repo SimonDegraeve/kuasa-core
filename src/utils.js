@@ -1,10 +1,8 @@
 /**
  * @flow
  */
-export function keysToLowerCase(obj: {} = {}): {} {
-  const newObj = {};
-  for (const [key, value] of Object.entries(obj)) {
-    newObj[key.toLowerCase()] = value;
-  }
-  return newObj;
+export function toLowerCaseKeys(obj: {} = {}): {} {
+  return Object.keys(obj).reduce((result: {}, key: string): {} => ({
+    ...result, [key.toLowerCase()]: obj[key],
+  }), {});
 }
