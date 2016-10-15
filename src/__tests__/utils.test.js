@@ -1,7 +1,7 @@
 /**
  * @flow
  */
-import { toLowerCaseKeys } from './utils';
+import { toLowerCaseKeys } from '../utils';
 
 
 /**

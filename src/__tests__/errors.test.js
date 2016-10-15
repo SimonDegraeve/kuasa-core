@@ -1,7 +1,7 @@
 /**
  * @flow
  */
-import { HttpError, ServerError } from './errors';
+import { HttpError, ServerError } from '../errors';
 
 
 /**

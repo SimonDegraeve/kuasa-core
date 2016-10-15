@@ -1,7 +1,7 @@
 /**
  * @flow
  */
-import Request from './request';
+import Request from '../request';
 
 
 /**
