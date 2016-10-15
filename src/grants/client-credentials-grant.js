@@ -14,8 +14,8 @@ export default class ClientCredentialsGrant {
     return this;
   }
 
-  responseType: void;
-  grantType: string;
+  responseType: ?string;
+  grantType: ?string;
 
   async validate() {
     return new ServerError();

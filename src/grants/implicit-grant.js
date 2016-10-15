@@ -14,8 +14,8 @@ export default class ImplicitGrant {
     return this;
   }
 
-  responseType: string;
-  grantType: void;
+  responseType: ?string;
+  grantType: ?string;
 
   async validate() {
     return new ServerError();

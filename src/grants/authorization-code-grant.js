@@ -15,8 +15,8 @@ export default class AuthorizationCodeGrant {
     return this;
   }
 
-  responseType: string;
-  grantType: string;
+  responseType: ?string;
+  grantType: ?string;
 
   async validate() {
     return new ServerError();

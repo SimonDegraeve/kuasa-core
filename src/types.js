@@ -27,3 +27,11 @@ export interface Grant {
   grantType: ?string,
   validate: () => Promise<Result>,
 }
+
+
+/**
+ *
+ */
+export interface AuthenticationScheme {
+  validate: () => Promise<*>,
+}
